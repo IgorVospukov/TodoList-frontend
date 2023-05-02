@@ -1,0 +1,42 @@
+.wrapper {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  // align-items: center;
+  flex-direction: column;
+}
+.friends {
+  margin-top: 30px;
+  grid-column: 1/2;
+  width: 100%;
+  border-right: 1px solid wheat;
+}
+.todo {
+  grid-column: 2/3;
+  width: 100%;
+  border-left: 1px solid wheat;
+   p {
+    margin-left: 20px;
+   }
+}
+.inputsTodo {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  input {
+    background-color: gray;
+    border: none;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  button {
+    color: grey;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 30px;
+  } 
+}
